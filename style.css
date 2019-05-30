@@ -1,0 +1,107 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+.upperHalf {
+  background: url("bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  size: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.lowerHalf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.upperHeading {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-content: center;
+  width: 65%;
+  padding: 4rem;
+}
+
+#lowerHeading {
+  color: red;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 20;
+  width: 60%;
+}
+
+.lowerContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: left;
+}
+
+#lowerList {
+  text-align: left;
+}
+
+#insuranceHeading {
+  color: white;
+  text-shadow: 1px 2px black;
+  font-size: 40px;
+}
+
+#subHeading {
+  color: yellow;
+  text-shadow: 1px 2px black;
+  font-size: 18px;
+}
+
+.insuranceForm {
+  padding: 2rem;
+  border: 2rem;
+  width: 26rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+button {
+  width: 100%;
+}
+.bottom {
+  color: dimgray;
+  font-size: 12px;
+  text-align: center;
+}
+
+#cardSubHeading {
+  font-size: 14px;
+}
+
+.material-icons {
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "\2713   ";
+}
+
+#cars {
+  width: 35rem;
+}
+
+@media only screen and (max-width: 799px) {
+  #lowerHeading {
+    width: 100%;
+  }
+}

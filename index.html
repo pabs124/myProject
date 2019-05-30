@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="upperHalf">
+      <div class="upperHeading">
+        <p id="insuranceHeading">
+          <b
+            >Lower Your Auto<br />
+            Insurance Rates</b
+          >
+        </p>
+        <p id="subHeading">
+          Compare Rates to Save On Your Policy Today!
+        </p>
+      </div>
+      <div class="insuranceForm">
+        <form>
+          <h4><b>Cheap Auto Coverage</b></h4>
+          <p>
+            Complete just <b>3 simple steps</b> to get quotes from top providers
+            in your area.
+          </p>
+          <div class="form-group">
+            <input class="form-control" id="zipcode" placeholder="Zip Code" />
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="currentlyInsured">
+              <option value="">Currently Insured?</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="ageRange">
+              <option value="">Your Age Range</option>
+              <option value="under25">Under 25</option>
+              <option value="25to34">25 to 34</option>
+              <option value="35to44">35 to 44</option>
+              <option value="45to55">45 to 55</option>
+              <option value="over55">Over 55</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button
+              type="button"
+              class="btn btn-danger"
+              onclick="rateFunction()"
+              data-toggle="modal"
+              data-target="#myModal"
+              id="rateButton"
+            >
+              Find Lower Rates
+            </button>
+          </div>
+          <div class="form-group blueButton">
+            <button type="button" class="btn btn-primary">
+              <i class="material-icons">
+                phone
+              </i>
+              Talk to a Live Agent
+            </button>
+          </div>
+          <div class="form-group">
+            <p class="bottom"><em>Your Information is safe and secure.</em></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="lowerHalf">
+      <div class="lowerContent">
+        <p id="lowerHeading">
+          We provide free quotes from top providers in your area in less time.
+        </p>
+        <ul id="lowerList">
+          <li>Save time researching policies.</li>
+          <li>Get a fast response with no waiting.</li>
+          <li>Compare low-cost policies.</li>
+          <li>Save up to 30% on auto insurance.</li>
+        </ul>
+      </div>
+      <div>
+        <img id="cars" src="cars.jpg" />
+      </div>
+    </div>
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <button type="button" class="btn btn-default" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="myScript.js"></script>
+</html>
